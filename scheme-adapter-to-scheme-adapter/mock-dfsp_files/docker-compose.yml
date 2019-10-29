@@ -1,0 +1,20 @@
+version: '3'
+services:
+  redis2:
+    image: "redis:5.0.4-alpine"
+    container_name: redis2
+  backend:
+    image: "mojaloop/sdk-mock-dfsp-backend"
+    env_file: ./backend.env
+    container_name: dfsp_mock_backend2
+    ports:
+      - "3000:3000"
+    depends_on:
+      - scheme-adapter2
+
+  scheme-adapter2:
+    image: "mojaloop/sdk-scheme-adapter:latest"
+    env_file: ./scheme-adapter.env
+    container_name: sa_sim2
+    depends_on:
+      - redis2

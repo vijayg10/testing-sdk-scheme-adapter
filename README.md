@@ -22,7 +22,9 @@ https://github.com/mojaloop/mojaloop-simulator.git
 
 The idea is to combine scheme adapter with mock DFSP backend on oneside and with mojaloop simulator on another side. Consider one side is payer dfsp and another side is payee dfsp. By following this example, you can send and recieve funds from one dfsp to another.
 
-Please click here for the documentation.
+Please [click here](scheme-adapter-to-scheme-adapter/doc.md) for the documentation.
+
+![SchemeAdapterToSchemeAdapter](scheme-adapter-to-scheme-adapter/scheme-adapter-to-scheme-adapter-overview.png)
 
 ## [Scheme Adapter + Mock DFSP Backend] -> [Local K8S cluster]
 
@@ -35,3 +37,5 @@ Please [click here](scheme-adapter-and-local-k8s/doc.md) for the documentation.
 ## [Scheme Adapter + Mojaloop Simulator] -> [Public hosted WSO2 enabled Mojaloop testing API]
 
 If you have access to the WSO2 Mojaloop API, you can test that by the following documentation.
+
+Coming soon

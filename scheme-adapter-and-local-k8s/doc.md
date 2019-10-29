@@ -100,4 +100,4 @@ curl -X POST \
 }'
 ```
 
-You should get a response with COMMITED status.
+You should get a response with COMPLETED currentState.

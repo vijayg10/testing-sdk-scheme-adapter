@@ -1,0 +1,25 @@
+version: '3'
+services:
+ redis1:
+   image: "redis:5.0.4-alpine"
+   container_name: redis1
+ sim:
+   image: "mojaloop-simulator-backend"
+   build: ../
+   env_file: ./sim-backend.env
+   container_name: ml_sim1
+   ports:
+     - "13000:3000"
+     - "3001:3001"
+     - "3003:3003"
+   depends_on:
+     - scheme-adapter
+ scheme-adapter:
+   image: "mojaloop/sdk-scheme-adapter:latest"
+   env_file: ./scheme-adapter.env
+   container_name: sa_sim1
+   ports:
+     - "3500:3000"
+     - "14000:4000"
+   depends_on:
+     - redis1
