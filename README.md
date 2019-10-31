@@ -36,6 +36,9 @@ Please [click here](scheme-adapter-and-local-k8s/doc.md) for the documentation.
 
 ## [Scheme Adapter + Mojaloop Simulator] -> [Public hosted WSO2 enabled Mojaloop testing API]
 
-If you have access to the WSO2 Mojaloop API, you can test that by the following documentation.
+If you have access to the WSO2 Mojaloop API, you can test that by the following documentation. In the above two scenarios, we didn't use token authentication and SSL encryption capabilities of scheme adapter. We are going to use those capabilites in this section.
 
-Coming soon
+Please [click here](scheme-adapter-and-wso2-api-gateway/doc.md) for the documentation.
+
+
+![SchemeAdapterAndWSO2APIGateway](scheme-adapter-and-wso2-api-gateway/scheme-adapter-and-wso2-api-gateway-overview.png)
