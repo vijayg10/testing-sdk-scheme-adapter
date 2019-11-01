@@ -135,7 +135,7 @@ curl -X POST \
 
 ```
 
-### In two step
+### In two steps
 
 The following command is used to send the money in two steps (i.e Requesting the quote first, accept after review the charges and party details)
 
