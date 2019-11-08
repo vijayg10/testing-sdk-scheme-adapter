@@ -28,6 +28,8 @@ A domain name should be registered and get SSL certificate for that domain name 
 
 You need to get CA certificate, server certificate and server private key to configure in our scheme adapter.
 
+If you want to try this on an aws EC2 instance and with letsencrypt certificate, please follow this [link](aws_deployment.md).
+
 ## Setting up Scheme Adapter with Mojaloop Simulator
 
 Please download the Mojaloop Simulator repo
